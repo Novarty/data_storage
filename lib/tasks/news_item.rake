@@ -3,7 +3,7 @@ namespace "news_items" do
 
   desc 'Fetch news item'
   task fetch: :environment do
-    newsapi = News.new(ENV['NEWS_API_KEY'])
+    newsapi = News.new('91e9ca3c3dc34660a597f38dd988ec4f')
 
     date_today =  Date.today.strftime("%Y-%m-%d").to_s
 
