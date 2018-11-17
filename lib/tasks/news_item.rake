@@ -3,13 +3,12 @@ namespace "news_items" do
 
   desc 'Fetch news item'
   task fetch: :environment do
-    newsapi = News.new('91e9ca3c3dc34660a597f38dd988ec4f')
+    newsapi = News.new("91e9ca3c3dc34660a597f38dd988ec4f")
 
     date_today =  Date.today.strftime("%Y-%m-%d").to_s
 
     all_articles = newsapi.get_everything(
       sources: 'google-news-ru',
-      language: 'ru',
       from: date_today,
       to: date_today
     )
