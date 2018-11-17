@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root to: "rails_admin/main#dashboard"
 
   scope '/api' do
-    get '/get_news', to: 'api#index'
+    get '/get_news', to: 'news#index'
   end
 end
