@@ -1,6 +1,5 @@
 namespace :service do
-  # BASE_URL = 'https://fast-stream-52562.herokuapp.com/'
-  BASE_URL = 'http://localhost:3000'
+  BASE_URL = 'https://fast-stream-52562.herokuapp.com/'
 
   desc 'Get all news from data_storage'
   task get_all_news: :environment do
