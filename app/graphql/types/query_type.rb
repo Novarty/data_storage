@@ -8,5 +8,13 @@ module Types
     def news_item(title:)
       NewsItem.find_by("title ILIKE ?", "%#{title}%")
     end
+
+    field :all_news, [NewsItemType], null: true do
+      description "Get all news"
+    end
+
+    def all_news
+      NewsItem.all
+    end
   end
 end
