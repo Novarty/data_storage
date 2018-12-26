@@ -23,7 +23,7 @@ namespace :service do
     end
 
     req = {search: params[:search_query]}
-    resp = conn.post "/api/search", req
+    resp = conn.get "/api/search", req
     pp JSON.parse(resp.body)
 
     puts "Done."

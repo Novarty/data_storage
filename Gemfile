@@ -15,6 +15,7 @@ gem 'news-api'
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'rails_admin', '~> 1.3'
+gem 'graphql'
 
 group :development, :test do
   gem 'dotenv-rails'
@@ -24,3 +25,5 @@ end
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
+
+gem 'graphiql-rails', group: :development
